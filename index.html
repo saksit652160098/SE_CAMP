@@ -1,1 +1,120 @@
-#Test PORJECT IN CAMP
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page HTML</title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <h1>WORKSHOP #HTML-FORM</h1>
+        <form action="#">
+            <table>
+                <tr>
+                    <td>ชื่อ</td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <td>นามสกุล</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>วัน/เดือน/ปีเกิด</td>
+                    <td>
+                        <input type="date" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>อายุ</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>เพศ</td>
+                    <td>
+                        <input id="radio_a"
+                               type="radio" 
+                               name="same_radio"/>
+                        <label for="radio_a">ชาย</label>
+                        <input id="radio_b"
+                                type="radio" 
+                                name="same_radio" />
+                        <label for="radio_b">หญิง</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        รูป
+                    </td>
+                    <td><input type="file"></td>
+                </tr>
+                
+            
+                <tr>
+                    <td>ที่อยู่</td>
+                    <td><textarea rows="4" 
+                    placeholder="กรุณาป้อนข้อมูล"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        สีที่ชอบ
+                    </td>
+                    <td>
+                        <select>
+                            <option 
+                            value=""
+                            disabled 
+                            selected>-</option>
+                            <option>สีขาว</option>
+                            <option>สีแดง</option>
+                            <option>สีเหลือง</option>
+                            <option>สีเขียว</option>
+                            <option>สีน้ำตาล</option>
+                            <option>สีฟ้า</option>
+                            <option>สีชมพู</option>
+                            <option>สีดำ</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>เแนวเพลงที่ชอบ</td>
+                    <td>
+                        <input id="radio_a"
+                               type="radio" 
+                               name="same_radio"/>
+                        <label for="radio_a">เพื่อชีวิต</label>
+                        <input id="radio_b"
+                                type="radio" 
+                                name="same_radio" />
+                        <label for="radio_b">ลูกทุ่ง</label>
+                        <input id="radio_b"
+                                type="radio" 
+                                name="same_radio" />
+                        <label for="radio_b">แดนซ์</label>
+                        <input id="radio_b"
+                                type="radio" 
+                                name="same_radio" />
+                        <label for="radio_b">อื่นๆ</label>
+                        
+                    </td>
+                </tr>
+                <tr>
+            
+                    <td>
+                        <input type="checkbox"
+                              name="my_checkbox">&ensp;ยินยอมให้เก็บข้อมูล
+                    
+                    </td>
+                </tr>
+                <tr>
+        
+                    <td>
+                        <input type="button" 
+                                value="Reset">&emsp;&emsp;&emsp;
+                                <input type="submit" value="Submit">
+                    
+                    </td>
+                </tr>
+            </table>
+            <br><br><br>
+        </form>
+    </body>
+</html>
