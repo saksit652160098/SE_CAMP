@@ -1,120 +1,161 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Page HTML</title>
-        <meta charset="utf-8" />
-    </head>
-    <body>
-        <h1>WORKSHOP #HTML-FORM</h1>
-        <form action="#">
-            <table>
-                <tr>
-                    <td>ชื่อ</td>
-                    <td><input type="text"/></td>
-                </tr>
-                <tr>
-                    <td>นามสกุล</td>
-                    <td><input type="text" /></td>
-                </tr>
-                <tr>
-                    <td>วัน/เดือน/ปีเกิด</td>
-                    <td>
-                        <input type="date" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>อายุ</td>
-                    <td><input type="text" /></td>
-                </tr>
-                <tr>
-                    <td>เพศ</td>
-                    <td>
-                        <input id="radio_a"
-                               type="radio" 
-                               name="same_radio"/>
-                        <label for="radio_a">ชาย</label>
-                        <input id="radio_b"
-                                type="radio" 
-                                name="same_radio" />
-                        <label for="radio_b">หญิง</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        รูป
-                    </td>
-                    <td><input type="file"></td>
-                </tr>
-                
+
+<head>
+    <title>Page HTML</title>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #E3F2FD;
+            margin: 0;
+            padding: 20px;
+        }   
+    
+        h1 {
+            color: #1565C0;
+            text-decoration: underline;
+            background-color: #BBDEFB;
+            padding: 10px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+    
+        table {
+            font-family: 'Verdana', sans-serif;
+            margin-top: 20px;
+        }
+    
+        input[type="text"],
+        textarea,
+        select {
+            font-size: 14px;
+            background-color: #BBDEFB;
+            border: 1px solid #1565C0;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 8px;
+            width: 100%;
+        }
+    
+        input[type="button"],
+        input[type="submit"] {
+            background-color: #1565C0;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
             
-                <tr>
-                    <td>ที่อยู่</td>
-                    <td><textarea rows="4" 
-                    placeholder="กรุณาป้อนข้อมูล"></textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        สีที่ชอบ
-                    </td>
-                    <td>
-                        <select>
-                            <option 
-                            value=""
-                            disabled 
-                            selected>-</option>
-                            <option>สีขาว</option>
-                            <option>สีแดง</option>
-                            <option>สีเหลือง</option>
-                            <option>สีเขียว</option>
-                            <option>สีน้ำตาล</option>
-                            <option>สีฟ้า</option>
-                            <option>สีชมพู</option>
-                            <option>สีดำ</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>เแนวเพลงที่ชอบ</td>
-                    <td>
-                        <input id="radio_a"
-                               type="radio" 
-                               name="same_radio"/>
-                        <label for="radio_a">เพื่อชีวิต</label>
-                        <input id="radio_b"
-                                type="radio" 
-                                name="same_radio" />
-                        <label for="radio_b">ลูกทุ่ง</label>
-                        <input id="radio_b"
-                                type="radio" 
-                                name="same_radio" />
-                        <label for="radio_b">แดนซ์</label>
-                        <input id="radio_b"
-                                type="radio" 
-                                name="same_radio" />
-                        <label for="radio_b">อื่นๆ</label>
-                        
-                    </td>
-                </tr>
-                <tr>
-            
-                    <td>
-                        <input type="checkbox"
-                              name="my_checkbox">&ensp;ยินยอมให้เก็บข้อมูล
-                    
-                    </td>
-                </tr>
-                <tr>
+        }
+    
+        input[type="button"]:hover,
+        input[type="submit"]:hover {
+            background-color: #1976D2;
+        }
+    
+        .btn-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+    
+        input[type="text"],
+        textarea,
+        select {
+            transition: border-color 0.3s ease;
         
-                    <td>
-                        <input type="button" 
-                                value="Reset">&emsp;&emsp;&emsp;
-                                <input type="submit" value="Submit">
-                    
-                    </td>
-                </tr>
-            </table>
-            <br><br><br>
-        </form>
-    </body>
+        }
+    
+        input[type="text"]:focus,
+        textarea:focus,
+        select:focus {
+            border-color: #f678f0;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <h1>WORKSHOP #HTML-FORM</h1>
+    <form action="#">
+        <table>
+    
+            <tr>
+                <td>ชื่อ</td>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <td>นามสกุล</td>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <td>วัน/เดือน/ปีเกิด</td>
+                <td><input type="date" /></td>
+            </tr>
+            <tr>
+                <td>อายุ</td>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <td>เพศ</td>
+                <td>
+                    <input id="radio_a" type="radio" name="same_radio" />
+                    <label for="radio_a">ชาย</label>
+                    <input id="radio_b" type="radio" name="same_radio" />
+                    <label for="radio_b">หญิง</label>
+                </td>
+            </tr>
+            <tr>
+                <td>รูป</td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td>ที่อยู่</td>
+                <td><textarea rows="4" placeholder="กรุณาป้อนข้อมูล"></textarea></td>
+            </tr>
+            <tr>
+                <td>สีที่ชอบ</td>
+                <td>
+                    <select>
+                        <option value="" disabled selected>-</option>
+                        <option>สีขาว</option>
+                        <option>สีแดง</option>
+                        <option>สีเหลือง</option>
+                        <option>สีเขียว</option>
+                        <option>สีน้ำตาล</option>
+                        <option>สีฟ้า</option>
+                        <option>สีชมพู</option>
+                        <option>สีดำ</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>เเนวเพลงที่ชอบ</td>
+                <td>
+                    <input id="radio_c" type="radio" name="music_radio" />
+                    <label for="radio_c">เพื่อชีวิต</label>
+                    <input id="radio_d" type="radio" name="music_radio" />
+                    <label for="radio_d">ลูกทุ่ง</label>
+                    <input id="radio_e" type="radio" name="music_radio" />
+                    <label for="radio_e">อื่นๆ</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <input type="checkbox" name="my_checkbox">&ensp;ยินยอมให้เก็บข้อมูล
+                </td>
+            </tr>
+        </table>
+        <td>
+            <br>
+            <input type="button" value="Reset">
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="submit" value="Submit">
+        </td>
+        <br><br><br>
+    </form>
+</body>
+
 </html>
