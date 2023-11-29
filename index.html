@@ -6,16 +6,24 @@
     <meta charset="utf-8" />
     <style>
         body {
+        
             font-family: 'Arial', sans-serif;
-            background-color: #E3F2FD;
-            margin: 0;
+            background-image: url('https://i.pinimg.com/564x/07/bc/95/07bc9586cb9cd09d5848d95e5660aebf.jpg');
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat; 
+            color: #333;
+            margin: 0; 
             padding: 20px;
-        }   
-    
+        }
+        form,h1{
+            margin-left: 80px;
+        }
         h1 {
             color: #1565C0;
             text-decoration: underline;
             background-color: #BBDEFB;
+            border-radius: 10px;
             padding: 10px;
             display: inline-block;
             margin-bottom: 20px;
@@ -27,22 +35,51 @@
         }
     
         input[type="text"],
-        textarea,
-        select {
+        textarea {
             font-size: 14px;
             background-color: #BBDEFB;
             border: 1px solid #1565C0;
-            border-radius: 5px;
+            border-radius: 10px;
             margin-bottom: 10px;
             padding: 8px;
             width: 100%;
         }
+        input[type = "file"]{
+            font-size: 12px;
+            background-color: #BBDEFB;
+            border: 1px solid #1565C0;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            padding: 8px;
+            width: 65%;
+        }
+        select{
+            font-size: 14px;
+            background-color: #BBDEFB;
+            border: 1px solid #1565C0;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 50%;
+        
+        }
+        input[type="date"]{
+            font-size: 14px;
+            background-color: #BBDEFB;
+            border: 1px solid #1565C0;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            padding: 8px;
+            width: 36%;
+        }
+
     
-        input[type="button"],
+        input[type="reset"],
         input[type="submit"] {
+            font-size: 16px;
             background-color: #1565C0;
             color: #fff;
-            padding: 10px 20px;
+            padding: 10px 22px;
             border: none;
             cursor: pointer;
             border-radius: 10px;
@@ -50,9 +87,9 @@
             
         }
     
-        input[type="button"]:hover,
+        input[type="reset"]:hover,
         input[type="submit"]:hover {
-            background-color: #1976D2;
+            background-color: #f36bd3;
         }
     
         .btn-container {
@@ -150,7 +187,7 @@
         </table>
         <td>
             <br>
-            <input type="button" value="Reset">
+            <input type="reset" value="Reset">
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
             <input type="submit" value="Submit">
         </td>
